@@ -1,0 +1,3 @@
+
+
+var base_url = "";
