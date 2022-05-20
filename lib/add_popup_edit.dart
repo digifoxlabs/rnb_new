@@ -287,7 +287,7 @@ class _AddPopupState extends State<AddPopupEdit> {
                                   String basicAuth =
                                       'Basic ' + base64Encode(utf8.encode('admin:1234'));
                                   var response = await post(Uri.parse(
-                                      "http://api.rnbgroup.org/api/employee/delete"),
+                                      "https://rnb.digifoxlabs.com/api/employee/delete"),
                                       body: data,
                                       headers: <String, String>{
                                         'authorization': basicAuth,

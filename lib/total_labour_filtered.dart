@@ -163,7 +163,7 @@ bool _isLoading = false;
      _isLoading = true;
      var jsonResponse = null;
      String basicAuth = 'Basic ' + base64Encode(utf8.encode('admin:1234'));
-     var response = await get(Uri.parse("http://api.rnbgroup.org/api/Labour/view?cat_id="+widget.id),
+     var response = await get(Uri.parse("https://rnb.digifoxlabs.com/api/Labour/view?cat_id="+widget.id),
          headers: <String, String>{
            'authorization': basicAuth,
            'X-API-KEY':'rnb_app',

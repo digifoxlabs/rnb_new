@@ -49,7 +49,7 @@ class _QRViewState extends State<QRViewScreen> {
   searchId(var txtId) async {
     var jsonResponse = null;
     String basicAuth = 'Basic ' + base64Encode(utf8.encode('admin:1234'));
-    var response = await get(Uri.parse("http://api.rnbgroup.org/api/labour/view?id=$txtId"),
+    var response = await get(Uri.parse("https://rnb.digifoxlabs.com/api/labour/view?id=$txtId"),
         headers: <String, String>{
           'authorization': basicAuth,
           'X-API-KEY':'rnb_app',

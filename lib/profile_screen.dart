@@ -416,7 +416,7 @@ class _ProfileState extends State<Profile> {
                                   };
                                   var jsonResponse = null;
                                   String basicAuth = 'Basic ' + base64Encode(utf8.encode('admin:1234'));
-                                  var response = await post(Uri.parse("http://api.rnbgroup.org/api/labour/delete"),
+                                  var response = await post(Uri.parse("https://rnb.digifoxlabs.com/api/labour/delete"),
                                       body: data,
                                       headers: <String, String>{
                                         'authorization': basicAuth,
@@ -588,7 +588,7 @@ class _ProfileState extends State<Profile> {
                                   String basicAuth =
                                       'Basic ' + base64Encode(utf8.encode('admin:1234'));
                                   var response = await post(Uri.parse(
-                                      "http://api.rnbgroup.org/api/Labour/updateValidity"),
+                                      "https://rnb.digifoxlabs.com/api/Labour/updateValidity"),
                                       body: data,
                                       headers: <String, String>{
                                         'authorization': basicAuth,

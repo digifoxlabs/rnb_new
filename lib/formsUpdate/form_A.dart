@@ -139,7 +139,7 @@ class _PersonalFormState extends State<FormAUpdate> {
   Future<void> getCategory() async {
     var jsonResponse = null;
     String basicAuth = 'Basic ' + base64Encode(utf8.encode('admin:1234'));
-    var response = await get(Uri.parse("http://api.rnbgroup.org/api/category/view"),
+    var response = await get(Uri.parse("https://rnb.digifoxlabs.com/api/category/view"),
         headers: <String, String>{
           'authorization': basicAuth,
           'X-API-KEY':'rnb_app',
@@ -178,7 +178,7 @@ class _PersonalFormState extends State<FormAUpdate> {
   Future<void> getJob() async {
     var jsonResponse = null;
     String basicAuth = 'Basic ' + base64Encode(utf8.encode('admin:1234'));
-    var response = await get(Uri.parse("http://api.rnbgroup.org/api/job/view"),
+    var response = await get(Uri.parse("https://rnb.digifoxlabs.com/api/job/view"),
         headers: <String, String>{
           'authorization': basicAuth,
           'X-API-KEY':'rnb_app',
@@ -223,7 +223,7 @@ class _PersonalFormState extends State<FormAUpdate> {
 
     var jsonResponse = null;
     String basicAuth = 'Basic ' + base64Encode(utf8.encode('admin:1234'));
-    var response = await get(Uri.parse("http://api.rnbgroup.org/api/Contractor/view"),
+    var response = await get(Uri.parse("https://rnb.digifoxlabs.com/api/Contractor/view"),
         headers: <String, String>{
           'authorization': basicAuth,
           'X-API-KEY':'rnb_app',

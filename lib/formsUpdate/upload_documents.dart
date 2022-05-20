@@ -408,7 +408,7 @@ class _UploadDocState extends State<UploadDocUpdate> {
 
     String basicAuth =
         'Basic ' + base64Encode(utf8.encode('admin:1234'));
-    var response = await post(Uri.parse("http://api.rnbgroup.org/api/labour/update"),
+    var response = await post(Uri.parse("https://rnb.digifoxlabs.com/api/labour/update"),
         body: jsonEncode(data),
         headers: <String, String>{
           'authorization': basicAuth,

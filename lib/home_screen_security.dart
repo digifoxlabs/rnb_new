@@ -423,7 +423,7 @@ class _HomeScreenSecurityState extends State<HomeScreenSecurity> {
       "posted_by":id
     };
     String basicAuth = 'Basic ' + base64Encode(utf8.encode('admin:1234'));
-    var response = await post(Uri.parse("http://api.rnbgroup.org/api/security/entry"),
+    var response = await post(Uri.parse("https://rnb.digifoxlabs.com/api/security/entry"),
         body: data,
         headers: <String, String>{
           'authorization': basicAuth,
