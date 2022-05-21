@@ -77,7 +77,7 @@ Widget container = new Container(child: Text(""),);
      _isLoading = true;
      var jsonResponse = null;
      String basicAuth = 'Basic ' + base64Encode(utf8.encode('admin:1234'));
-     var response = await get(Uri.parse("https://rnb.digifoxlabs.com/job/view"),
+     var response = await get(Uri.parse("https://rnb.digifoxlabs.com/api/job/view"),
          headers: <String, String>{
            'authorization': basicAuth,
            'X-API-KEY':'rnb_app',
